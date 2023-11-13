@@ -6,7 +6,7 @@ metadata:
   tags:
     - go
   annotations:
-    "backstage.io/kubernetes-id": devportal
+    backstage.io/kubernetes-id: "devportal-petclinic"
 spec:
   type: service
   lifecycle: production
