@@ -7,6 +7,7 @@ metadata:
     - go
   annotations:
     backstage.io/kubernetes-id: "devportal-petclinic"
+    veecode/cluster-name: "devportal-kubernetes"
 spec:
   type: service
   lifecycle: production
