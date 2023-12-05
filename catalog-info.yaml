@@ -8,6 +8,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: "devportal-petclinic"
     veecode/cluster-name: "devportal-kubernetes"
+    eks/region: "nyc3"
 spec:
   type: service
   lifecycle: production
