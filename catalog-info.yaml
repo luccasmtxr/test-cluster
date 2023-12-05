@@ -14,4 +14,4 @@ spec:
   lifecycle: production
   owner: guest
   dependsOn: 
-    - teste-enviroment
+    - enviroment:default/teste-enviroment
