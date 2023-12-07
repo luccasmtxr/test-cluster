@@ -33,3 +33,19 @@ spec:
   owner: guest
   dependencyOf: 
     - component:default/devportal-kubernetes
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "eks-br"
+  environment:
+    domain: 'apps.vkpr.net'
+  annotations:
+    github.com/project-slug: veecode-homolog/eks-br
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: terraform-deploy.yml,terraform-destroy.yml
+    veecode/cluster-name: "eks-br"
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
