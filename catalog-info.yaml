@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: devportal-kubernetes
+  name: devportal-kubernetes-teste-luccas
   description: teste cluster devportal
   tags:
     - go
@@ -21,7 +21,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: devportal-enviroment
+  name: devportal-enviroment-teste-luccas
   description: teste enviroment devportal
   annotations:
     backstage.io/kubernetes-id: "devportal-petclinic"
