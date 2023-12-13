@@ -46,6 +46,6 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     veecode/cluster-name: "k3d-vkpr-local"
 spec:
-  type: devops
+  type: service
   lifecycle: experimental
   owner: "group:default/admin"
