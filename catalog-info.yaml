@@ -39,12 +39,12 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "k3d-vkpr-local"
+  name: "k3d-k3s"
   environment:
     domain: 'apps.vkpr.net'
   annotations:
     backstage.io/techdocs-ref: dir:.
-    veecode/cluster-name: "k3d-vkpr-local"
+    veecode/cluster-name: "k3d-k3s"
 spec:
   type: service
   lifecycle: experimental
