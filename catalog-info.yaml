@@ -49,7 +49,8 @@ spec:
   type: service
   lifecycle: experimental
   owner: admin
-  ---
+  
+---
 
 apiVersion: backstage.io/v1alpha1
 kind: Component
