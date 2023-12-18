@@ -10,13 +10,12 @@ metadata:
     veecode/cluster-name: "devportal-kubernetes"
     eks/region: "nyc3"
 spec:
-  type: service
   lifecycle: production
-  owner: guest
+  owner: group:default/admin
   dependsOn: 
     - enviroment:default/devportal-enviroment-teste-luccas
-    - component:default/k3d-k3s
-    - enviroment:default/teste-component-luccas
+    - component:default/k3d-k3s-luccas
+    - component:default/teste-component-luccas
 
 ---
 
@@ -30,9 +29,8 @@ metadata:
     veecode/cluster-name: "devportal-kubernetes"
     eks/region: "nyc3"
 spec:
-  type: service
   lifecycle: production
-  owner: guest
+  owner: group:default/admin
   dependencyOf: 
     - component:default/devportal-kubernetes
     
@@ -41,7 +39,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "k3d-k3s"
+  name: "k3d-k3s-luccas"
   environment:
     domain: 'apps.vkpr.net'
   annotations:
