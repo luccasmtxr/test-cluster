@@ -13,14 +13,14 @@ spec:
   lifecycle: production
   owner: group:default/admin
   dependsOn: 
-    - enviroment:default/devportal-enviroment-teste-luccas
+    - environment:default/devportal-enviroment-teste-luccas
     - component:default/k3d-k3s-luccas
     - component:default/teste-component-luccas
 
 ---
 
 apiVersion: backstage.io/v1alpha1
-kind: Enviroment
+kind: Environment
 metadata:
   name: devportal-enviroment-teste-luccas
   description: teste enviroment devportal
