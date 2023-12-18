@@ -14,12 +14,14 @@ spec:
   lifecycle: production
   owner: guest
   dependsOn: 
-    - component:default/devportal-enviroment
+    - enviroment:default/devportal-enviroment-teste-luccas
+    - component:default/k3d-k3s
+    - enviroment:default/teste-component-luccas
 
 ---
 
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Enviroment
 metadata:
   name: devportal-enviroment-teste-luccas
   description: teste enviroment devportal
@@ -37,7 +39,7 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
-kind: Cluster
+kind: Component
 metadata:
   name: "k3d-k3s"
   environment:
@@ -45,6 +47,20 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     veecode/cluster-name: "k3d-k3s"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"
+  ---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "teste-component-luccas"
+  environment:
+    domain: 'apps.vkpr.net'
+  annotations:
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: experimental
