@@ -10,6 +10,7 @@ metadata:
     veecode/cluster-name: "devportal-kubernetes"
     eks/region: "nyc3"
 spec:
+  type: eks
   lifecycle: production
   owner: group:default/admin
   dependsOn: 
@@ -29,6 +30,7 @@ metadata:
     veecode/cluster-name: "devportal-kubernetes"
     eks/region: "nyc3"
 spec:
+  type: env
   lifecycle: production
   owner: group:default/admin
   dependencyOf: 
