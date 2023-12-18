@@ -11,7 +11,7 @@ metadata:
     eks/region: "nyc3"
 spec:
   lifecycle: production
-  owner: admin
+  owner: group:default/admin
   dependsOn: 
     - enviroment:default/devportal-enviroment-teste-luccas
     - component:default/k3d-k3s-luccas
@@ -30,7 +30,7 @@ metadata:
     eks/region: "nyc3"
 spec:
   lifecycle: production
-  owner: admin
+  owner: group:default/admin
   dependencyOf: 
     - cluster:default/devportal-kubernetes-teste-luccas
     
@@ -48,7 +48,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: admin
+  owner: group:default/admin
   dependencyOf: 
     - cluster:default/devportal-kubernetes-teste-luccas
   
@@ -65,6 +65,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: admin
+  owner: group:default/admin
   dependencyOf: 
     - cluster:default/devportal-kubernetes-teste-luccas
