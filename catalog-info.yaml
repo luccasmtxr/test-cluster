@@ -32,7 +32,7 @@ spec:
   lifecycle: production
   owner: admin
   dependencyOf: 
-    - component:default/devportal-kubernetes
+    - cluster:default/devportal-kubernetes-teste-luccas
     
 ---
 
@@ -49,6 +49,8 @@ spec:
   type: service
   lifecycle: experimental
   owner: admin
+  dependencyOf: 
+    - cluster:default/devportal-kubernetes-teste-luccas
   
 ---
 
@@ -64,3 +66,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: admin
+  dependencyOf: 
+    - cluster:default/devportal-kubernetes-teste-luccas
