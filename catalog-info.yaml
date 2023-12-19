@@ -14,7 +14,7 @@ spec:
   lifecycle: production
   owner: group:default/admin
   system: environment:default/devportal-enviroment-teste-luccas
-  dependsOn: environment:default/devportal-enviroment-teste-luccas
+  subcomponentOf: environment:default/devportal-enviroment-teste-luccas
 
 ---
 
@@ -31,7 +31,6 @@ spec:
   type: env
   lifecycle: production
   owner: group:default/admin
-  dependencyOf: cluster:default/devportal-kubernetes-teste-luccas
     
 ---
 
@@ -48,7 +47,7 @@ spec:
   type: service
   lifecycle: experimental
   owner: group:default/admin
-  dependencyOf: cluster:default/devportal-kubernetes-teste-luccas
+  subcomponentOf: cluster:default/devportal-kubernetes-teste-luccas
   
 ---
 
@@ -64,4 +63,4 @@ spec:
   type: service
   lifecycle: experimental
   owner: group:default/admin
-  dependencyOf: cluster:default/devportal-kubernetes-teste-luccas
+  subcomponentOf: cluster:default/devportal-kubernetes-teste-luccas
