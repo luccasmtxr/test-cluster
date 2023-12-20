@@ -1,3 +1,4 @@
+
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -5,8 +6,8 @@ metadata:
   description: luccas group
 spec:
   type: team
-  lifecycle: production
-
+  children: []
+  
 ---
 
 apiVersion: backstage.io/v1alpha1
