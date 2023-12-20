@@ -26,7 +26,6 @@ spec:
   lifecycle: production
   owner: group:default/luccas
   environment: "environment:devportal-enviroment-teste-luccas"
-  dependsOn: ["environment:devportal-enviroment-teste-luccas"]
 
 ---
 
@@ -43,6 +42,7 @@ spec:
   type: env
   lifecycle: production
   owner: group:default/admin
+  clusters: ["devportal-kubernetes-teste-luccas"]
     
 ---
 
