@@ -14,7 +14,8 @@ spec:
   lifecycle: production
   owner: group:default/admin
   system: default/devportal-enviroment-teste-luccas
-  dependsOn: default/devportal-enviroment-teste-luccas
+  dependsOn: 
+    - default/devportal-enviroment-teste-luccas
 
 ---
 
