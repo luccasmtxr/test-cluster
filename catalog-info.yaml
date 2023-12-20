@@ -13,7 +13,7 @@ spec:
   type: eks
   lifecycle: production
   owner: group:default/admin
-  dependsOn: ["environment:default/devportal-enviroment-teste-luccas"]
+  dependsOn: ["environment:devportal-enviroment-teste-luccas"]
 
 ---
 
