@@ -1,4 +1,15 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: luccas
+  description: luccas group
+spec:
+  type: team
+  lifecycle: production
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Cluster
 metadata:
   name: devportal-kubernetes-teste-luccas
@@ -12,7 +23,7 @@ metadata:
 spec:
   type: eks
   lifecycle: production
-  owner: group:default/admin
+  owner: group:default/luccas
   dependsOn: ["environment:devportal-enviroment-teste-luccas"]
 
 ---
