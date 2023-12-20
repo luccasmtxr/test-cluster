@@ -42,7 +42,6 @@ spec:
   type: env
   lifecycle: production
   owner: group:default/admin
-  clusters: ["devportal-kubernetes-teste-luccas"]
     
 ---
 
