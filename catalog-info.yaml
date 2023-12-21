@@ -41,7 +41,7 @@ metadata:
 spec:
   type: env
   lifecycle: production
-  owner: group:default/admin
+  owner: group:default/luccas
     
 ---
 
