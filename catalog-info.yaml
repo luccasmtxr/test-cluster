@@ -75,3 +75,19 @@ spec:
   lifecycle: experimental
   owner: group:default/admin
   subcomponentOf: cluster:default/devportal-kubernetes-teste-luccas
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "teste-component-luccas-type"
+  environment:
+    domain: 'apps.vkpr.net'
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: eks
+  lifecycle: experimental
+  owner: group:default/admin
+  subcomponentOf: cluster:default/devportal-kubernetes-teste-luccas
